@@ -1,0 +1,49 @@
+*,*::after,*::before
+{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Exo 2", sans-serif;
+}
+#home
+{
+    background-image:url(../images/beautiful-shot-snowy-mountain-sunset.jpg) ;
+    background-position: center center;
+    background-size: cover;
+}
+.crud
+{
+    background: linear-gradient(#95d2b48b , #d8efd37f);
+    /* border: .0313rem solid #F1F8E8; */
+}
+.products
+{
+    background: linear-gradient(#95d2b48b , #d8efd37f);
+}
+.form-control
+{
+    background-color: transparent;
+}
+.form-control:focus
+{
+    box-shadow: none;
+    background-color: transparent;
+}
+.searchInput::placeholder
+{
+    color: #fff;
+}
+
+.product img
+{
+height: 150px;
+object-fit: contain; 
+/* كيفية عرض الصورة و الحفاظ على نسبها */
+}
+.product
+{
+    padding: 20px;
+    background-color: #3333332d;
+border: 0.5px solid #F1F8E8;
+/* border-radius: 5%; */
+}

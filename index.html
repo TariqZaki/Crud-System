@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *************** LINK WEBSITE ICON ************** -->
+    <link rel="ICON" href="images/wit-crud-core-01.png">
+    <!-- *************** LINK WEBSITE ICON ************** -->
+
+    <title>CRUD system</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- *************** LINKS CSS ************** -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- *************** LINKS CSS ************** -->
+
+</head>
+
+<body>
+    <section class="home min-vh-100" id="home">
+        <div class="container ">
+
+            <div class="row">
+                <div class="col-md-8 mt-3 crud mx-auto rounded-4 border-1 p-5 shadow-lg">
+                    <div class="title">
+                        <h1 class="text-center"><i class="fa-solid fa-cart-plus fa-bounce"></i> CRUD system <i
+                                class="fa-solid fa-cart-plus fa-bounce"></i></h1>
+                    </div>
+                    <div class="form">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control  border-0 border-bottom" id="productName"
+                                placeholder="Product Name">
+                            <div class="alert alert-danger d-none">product Name must start upperCase then LowerCase...
+                            </div>
+                            <label for="productName">Product Name :</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control border-0 border-bottom" id="productPrice"
+                                placeholder="Product Price">
+                            <div class="alert alert-danger d-none">product price must contain from 3numbers to
+                                5numbers... </div>
+                            <label for="productPrice">Product Price :</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" list="categories" class="form-control border-0 border-bottom"
+                                id="productCategory" placeholder="Product Category">
+                            <div class="alert alert-danger d-none">product categoey must be from data List... </div>
+                            <label for="productCategory">Product Category :</label>
+
+
+                            <datalist id="categories">
+                                <option value="TV">
+                                <option value="Mobile">
+                                <option value="Labtop">
+                                <option value="Screens">
+                                <option value="Electronics">
+                            </datalist>
+                        </div>
+
+
+                        <div class="form-floating mb-3">
+                            <textarea type="text" class="form-control border-0 border-bottom" id="productDesc"
+                                placeholder="Product Description"></textarea>
+                            <label for="productDesc">Product Description :</label>
+                        </div>
+
+
+                        <div class="form-floating mb-3">
+                            <input accept="images/*" type="file" class="form-control border-0 border-bottom p-4"
+                                id="productImage" placeholder="Product Image">
+                            <label for="productImage">Product Image :</label>
+                        </div>
+
+                        <button id="addBtn" class="btn btn-dark">New Product</button>
+                        <button id="updateProduct" class="btn btn-warning d-none">Update Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="productContainerborder-1 rounded-4 products  mt-2 p-2">
+                <input type="text" class="searchInput  form-control  w-50 mx-auto text-white shadow-sm"
+                    placeholder="Search by Name...">
+                <div class="row py-5" id="rowData">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- *************** LINKS JS ************** -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js
+    "></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- *************** LINKS JS ************** -->
+
+</body>
+
+</html>
